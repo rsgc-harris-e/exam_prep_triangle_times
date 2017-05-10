@@ -68,19 +68,22 @@ while angle[2] == 0 {
 }
 
 if angle[0] + angle[1] + angle[2] == 180{
+    
+    if angle[0] == 100 || angle[1] == 100 || angle[2] == 100{ //Easter egg
+        print("💯")
+    }
     //equilateral
     if angle[0] == angle[1] && angle[0] == angle[2] && angle[1] == angle[2]{
         output = 0
         
-        
-    }//isosceles
-    else if angle[0] == angle[1] || angle[0] == angle[2] || angle[1] == angle[2]{
+    //Isosceles
+    }else if angle[0] == angle[1] || angle[0] == angle[2] || angle[1] == angle[2]{
         output = 1
-    }else{
+    } else {
         //scalene
         output = 2
     }
-}else {
+} else {
     output = 4
 }
 
